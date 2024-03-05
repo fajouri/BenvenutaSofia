@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baby Shower di Sofia</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('https://via.placeholder.com/150');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #ff80ab !important; /* Navbar rosa */
+    }
+
+    .navbar-brand, .nav-link {
+      color: #fff !important; /* Testo bianco */
+    }
+
+    .navbar-brand:hover, .nav-link:hover {
+      color: #ffcdd2 !important; /* Testo rosa chiaro al passaggio del mouse */
+    }
+
+    /* Sezione di Benvenuto */
+    #welcome {
+      background-color: rgba(255, 255, 255, 0.9); /* Sfondo bianco con opacità */
+    }
+
+    /* Sezione Lista dei Desideri */
+    #wishlist {
+      background-color: rgba(248, 187, 208, 0.9); /* Sfondo rosa chiaro con opacità */
+    }
+
+    .btn-pink {
+      background-color: #ff80ab; /* Bottone rosa */
+      border-color: #ff80ab; /* Bordo rosa */
+      color: #fff; /* Testo bianco */
+    }
+
+    .btn-pink:hover {
+      background-color: #ff5252; /* Rosa scuro al passaggio del mouse */
+      border-color: #ff5252; /* Bordo rosa scuro al passaggio del mouse */
+    }
+
+    /* Sezione Donazioni */
+    #donate {
+      background-color: rgba(255, 255, 255, 0.9); /* Sfondo bianco con opacità */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ff80ab; /* Footer rosa */
+      color: #fff; /* Testo bianco */
+    }
+
+    footer a {
+      color: #fff; /* Link bianchi */
+    }
+
+    footer a:hover {
+      color: #ffcdd2; /* Link rosa chiaro al passaggio del mouse */
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Barra di Navigazione -->
+<nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Baby Shower di Sofia</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link languageToggle" href="#welcome">Benvenuti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link languageToggle" href="#wishlist">Lista dei Desideri</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link languageToggle" href="#donate">Dona</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="toggleLanguage()">English</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sezione di Benvenuto -->
+<section id="welcome" class="py-5 text-center">
+  <div class="container">
+    <h2>Benvenuta Sofia!</h2>
+    <p>Siamo molto felici di dare il benvenuto a Sofia insieme a voi!
+Grazie per essersi unita a noi in questo momento.
+Considerando che siamo lontani, come ci hanno chiesto alcuni dei nostri amici e familiari, vi lasciamo una lista di regali per Sofia.</p>
+  </div>
+</section>
+
+<!-- Sezione Lista dei Desideri -->
+<section id="wishlist" class="py-5 text-center">
+  <div class="container">
+    <h2>Lista dei Desideri</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="https://www.mumnme.com.mt/webshop/image/cache/catalog/product/luna%20no%20stand-688x688h.jpg" alt="Plebani Giove Changing Unit" class="img-fluid mb-3">
+        <h4>Plebani Giove Changing Unit</h4>
+        <a href="https://www.mumnme.com.mt/webshop/plebani-changing-unit-luna-white?search=changer&description=true" class="btn btn-pink">Acquista Ora</a>
+      </div>
+      <div class="col-md-4">
+        <img src="https://www.mumnme.com.mt/webshop/image/cache/catalog/product/5903089087595-688x688h.jpg" alt="Tiny Star Baby Nest Bamboo Floral & Rosy" class="img-fluid mb-3">
+        <h4>Tiny Star Baby Nest Bamboo Floral & Rosy</h4>
+        <a href="https://www.mumnme.com.mt/webshop/tiny-star-baby-nest-bamboo-floral-rosy" class="btn btn-pink">Acquista Ora</a>
+      </div>
+      <div class="col-md-4">
+        <img src="https://www.mumnme.com.mt/webshop/image/cache/catalog/product/4007923160176-2-688x688h.jpg" alt="Articolo 3" class="img-fluid mb-3">
+        <h4>Hauck Stroller Travel n Care Dark Olive</h4>
+        <a href="https://www.mumnme.com.mt/webshop/hauck-stroller-travel-n-care-dark-olive" class="btn btn-pink">Acquista Ora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sezione Donazioni -->
+<section id="donate" class="py-5 text-center">
+  <div class="container">
+    <h2>Grazie</h2>
+    <p>Nel caso vogliate acquistare qualcosa potete inviare la cifra che desiderate, non necessariamente il prezzo totale dei prodotti, all'IBAN qui sotto con il codice wishlist 888 e il regalo e noi faremo l'ordine al negozio.
+</p>
+    <p>IBAN: XXXX XXXX XXXX XXXX</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 text-center">
+  <div class="container">
+    <p>© 2024 Baby Shower di Sofia. Tutti i diritti riservati.</p>
+  </div>
+</footer>
+
+<script>
+  // Funzione JavaScript per alternare tra lingua italiana e inglese
+  function toggleLanguage() {
+    var elements = document.getElementsByClassName('languageToggle');
+    for (var i = 0; i < elements.length; i++) {
+      var currentLanguage = elements[i].innerHTML.trim();
+      if (currentLanguage === 'Benvenuti') {
+        elements[i].innerHTML = 'Welcome';
+      } else if (currentLanguage === 'Lista dei Desideri') {
+        elements[i].innerHTML = 'Wishlist';
+      } else if (currentLanguage === 'Dona') {
+        elements[i].innerHTML = 'Donate';
+      }
+    }
+  }
+</script>
+
+</body>
+</html>
